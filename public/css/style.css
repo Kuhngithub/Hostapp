@@ -1,0 +1,148 @@
+:root{
+    --color1:#128413;
+    --color2:#72A433;
+    --color3:#FFA200;
+    --color4:#E5EFF0;
+    --color5:#333333;
+}
+
+*{
+    text-decoration:none !important;
+    list-style-type:none;
+    padding:0;
+    margin:0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.top-nav{
+    background-color:var(--color1);
+}
+
+.navbar{
+    background-color:var(--color2);
+}
+
+.nav-link{
+    letter-spacing: 1px;
+    transition: 300ms ease-in;
+}
+.nav-link:hover{
+    color:var(--color1) !important;
+}
+.search-btn{
+    background-color:var(--color1) !important;
+}
+
+#header{
+    height:50vh;
+    background-image:linear-gradient(45deg,var(--color5),rgba(8,83,156, 0.75)), url('../img/9.jpg');
+    background-size:cover;
+}
+
+#blog-area{
+    background-color:var(--color4);
+}
+
+.card-img-top{
+    height:250px;
+    object-fit: cover;
+}
+.badge{
+    background-color: var(--color5);
+    letter-spacing:1px;
+}
+.next-btn{
+    background-color:var(--color5) !important;
+}
+
+#article-section{
+    background-color:var(--color4);
+}
+
+.leave-reply-section{
+    border:1px solid gray;
+    box-shadow:5px 4px 10px gray;
+    background-color: #fff;
+}
+.post-comment-btn{
+    background-color:var(--color5) !important;
+}
+.post-comment-btn:hover{
+    background-color:var(--color2) !important;
+    transition: background-color 300ms ease-in;
+}
+
+#footer{
+    background-color: var(--color5);
+}
+.quick-links > li > a:hover{
+    color:var(--color2) !important;
+    transition: color 300ms ease-in;
+}
+.online-marketing-links > li > a:hover{
+    color:var(--color2) !important;
+    transition: color 300ms ease-in;
+}
+.down-footer{
+    background-color:#000;
+}
+.follow-us-link > li > a:hover{
+    color:var(--color2) !important;
+    transition: color 300ms ease-in;
+}
+
+
+/* STYLING FOR REGISTRATION PAGE STARTS HERE */
+#registration-form-area{
+    background-color: var(--color1);
+    min-height:100vh;
+}
+.registration-form{
+    background-color:#fff;
+}
+.registration-brand{
+    color:var(--color1) !important;
+}
+.registration-button{
+    background-color:var(--color1) !important;
+    font-weight:bold;
+    transition: 300ms ease-in;
+}
+.registration-button:hover{
+    background-color:var(--color2) !important;
+    transition:background-color 300ms ease-in-out;
+}
+.error-message{
+    font-size:12px;
+}
+/* ENDS HERE */
+
+
+/* STYLING FOR LOGIN PAGE STARTS HERE */
+#login-form-area{
+    background-color: var(--color1);
+    min-height:100vh;
+}
+.login-form{
+    background-color:#fff;
+    margin-top:100px !important;
+}
+.login-brand{
+    color:var(--color1) !important;
+}
+.login-button{
+    background-color:var(--color1) !important;
+    font-weight:bold;
+    transition: 300ms ease-in;
+}
+.login-button:hover{
+    background-color:var(--color2) !important;
+    transition:background-color 300ms ease-in-out;
+}
+.error-output{
+    font-size:12px;
+}
+/* ENDS HERE */

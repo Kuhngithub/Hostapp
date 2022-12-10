@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css" integrity="sha512-5PV92qsds/16vyYIJo3T/As4m2d8b6oWYfoqV+vtizRB6KhF1F9kYzWzQmsO6T3z3QG2Xdhrx7FQ+5R1LiQdUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="./img/wrench-adjustable-circle.svg">
+    <title>Registration | HostApp</title>
+</head>
+<body>
+<div id="registration-form-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto p-5 registration-form">
+                <div class="col-12">
+                    {{#if message}}
+                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                            <button type="button" class="btn-close shadow-none" data-bs-dismiss="alert" aria-label="Close"></button>
+                            <strong class="error-output">{{message.[0].msg}} <br></strong>
+                            <strong class="error-output">{{message.[1].msg}} <br></strong>
+                            <strong class="error-output">{{message.[2].msg}} <br></strong>
+                            <strong class="error-output">{{message.[3].msg}} <br></strong>
+                            <strong class="error-output">{{message.[4].msg}} <br></strong>
+                            <strong class="error-output">{{message.[5].msg}} <br></strong>
+                            <strong class="error-output">{{message.[6].msg}} <br></strong>
+                            <strong class="error-output">{{message.[7].msg}} <br></strong>
+                            <strong class="error-output">{{message.[8].msg}} <br></strong>
+                            <strong class="error-output">{{message.[9].msg}} <br></strong>
+                            <strong class="error-output">{{message.[10].msg}} <br></strong>
+                        </div>
+                    {{/if}}
+                </div>
+                <form action="/registration" method="POST">
+                    <a class="navbar-brand fs-3 fw-bold d-block m-auto text-center mb-3 registration-brand"><i class="bi bi-wrench-adjustable-circle"></i> HostApp</a>
+                    <h4 class="text-center mb-3">Create an Account</h4>
+                    <div class="col-12 mb-3">
+                        <input type="text" class="form-control shadow-none" placeholder="Full Name" aria-label="" name="fullname">
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 mb-3">
+                        <input type="text" class="form-control shadow-none" placeholder="Email Address" aria-label="" name="email">
+                        </div>
+                        <div class="col-sm-6 mb-3">
+                        <input type="tel" class="form-control shadow-none" placeholder="Phone Number" aria-label="" name="phone">
+                        </div>
+                    </div>
+                    <div class="col-12 mb-3">
+                        <input type="text" class="form-control shadow-none" placeholder="Company Name(optional)" aria-label="" name="company_name">
+                    </div>
+                    <div class="col-12 mb-3">
+                        <input type="text" class="form-control shadow-none" placeholder="Street Address" aria-label="" name="street_address_1">
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4 mb-3">
+                        <input type="text" class="form-control shadow-none" placeholder="City" aria-label="" name="city">
+                        </div>
+                        <div class="col-sm-4 mb-3">
+                        <input type="tel" class="form-control shadow-none" placeholder="Postcode" aria-label="" name="postcode">
+                        </div>
+                        <div class="col-sm-4 mb-3">
+                        <input type="tel" class="form-control shadow-none" placeholder="Country" aria-label="" name="country">
+                        </div>
+                    </div>
+                    <div class="col-12 mb-3">
+                        <input type="text" class="form-control shadow-none" placeholder="Tax ID(optional)" aria-label="" name="tax_id">
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 mb-3">
+                        <input type="password" class="form-control shadow-none" placeholder="Password" aria-label="" name="password">
+                        </div>
+                        <div class="col-sm-6 mb-3">
+                        <input type="password" class="form-control shadow-none" placeholder="Confirm Password" aria-label="" name="confirm_password">
+                        </div>
+                    </div>
+                    <div class="alert alert-danger" role="alert">
+                        <p class="text-center p-0 m-0"><i class="bi bi-exclamation-triangle-fill"></i> Terms Of Services</p>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            By submitting this order, you agree to the Terms of Service and Privacy Policy. You agree that HostApp will automatically attempt to renew your services prior to their next due date unless you request otherwise from your Client Area
+                        </label>
+                    </div>
+                    <div class="col-12 mb-3 mt-3">
+                        <input type="submit" class="form-control registration-button text-white" value="Register">
+                    </div>
+                    <p class="text-center">Already a Client?<a href="/login"> Login</a></p>
+                    <p class="text-center"><a href="/"> Back to Blog</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
