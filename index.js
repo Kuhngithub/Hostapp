@@ -106,7 +106,7 @@ app.get('/login', (req, res)=>{
 })
 
 //Mongoose DATA BASE (ASSIGNMENT4)
-mongoose.connect("mongodb+srv://professorkuhn:Atlas.123@senecaweb.souvhle.mongodb.net/DB1?retryWrites=true&w=majority")
+mongoose.connect("mongodb+srv://professorkuhn:david@senecaweb.souvhle.mongodb.net/DB1?retryWrites=true&w=majority")
 
 const customers_schema = new mongoose.Schema ({
 "fullname" : String,
